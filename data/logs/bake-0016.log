@@ -1,0 +1,76 @@
+=== bake #0016 torch oven=cuda python=3.12 ===
+[00000s] step 1/10: Resolving build dependencies
+[00024s]   info: compiled kernel-5048
+[00059s]   ok: cache miss object-4743
+[00066s]   ok: cache miss kernel-8369
+[00100s]   ok: retrying object-7575
+[00131s]   info: skipped artifact-3716
+[00171s]   ok: compiled kernel-7142
+[00193s]   ok: downloaded artifact-5788
+[00213s]   ok: cache miss layer-7978
+[00216s]   ok: compiled header-9868
+[00235s]   info: downloaded object-7706
+[00270s]   warn: skipped kernel-4243
+[00270s] step 2/10: Fetching source tarball
+[00309s]   ok: cache hit header-1355
+[00325s]   ok: cache miss header-1284
+[00350s]   ok: cache hit artifact-3768
+[00364s]   ok: compiled header-8782
+[00368s]   info: downloaded layer-8366
+[00408s]   ok: cache hit object-3878
+[00422s]   info: retrying artifact-7632
+[00422s] step 3/10: Verifying checksum
+[00453s]   ok: cache hit artifact-149
+[00454s]   ok: retrying artifact-6333
+[00466s]   ok: cache hit layer-450
+[00476s]   ok: compiled artifact-14
+[00484s]   ok: downloaded object-841
+[00522s]   warn: downloaded kernel-895
+[00531s]   warn: downloaded artifact-1516
+[00565s]   ok: cache miss artifact-6777
+[00576s]   info: downloaded kernel-8669
+[00606s]   ok: downloaded header-4367
+[00614s]   ok: cache miss kernel-1467
+[00631s]   ok: cache miss kernel-1599
+[00631s] step 4/10: Applying accelerator patches
+[00648s]   info: skipped artifact-2772
+[00675s]   warn: downloaded layer-9736
+[00691s]   ok: skipped artifact-8347
+[00722s]   info: cache hit object-1653
+[00747s]   ok: compiled artifact-6994
+[00750s]   warn: cache hit layer-8607
+[00785s]   ok: retrying kernel-6537
+[00805s]   info: skipped header-7389
+[00809s]   ok: compiled layer-6497
+[00809s] step 5/10: Configuring CMake
+[00819s]   info: retrying header-4629
+[00823s]   ok: retrying object-8407
+[00860s]   ok: skipped layer-935
+[00894s]   warn: compiled artifact-4668
+[00895s]   ok: compiled object-7090
+[00916s]   ok: downloaded kernel-2961
+[00940s]   ok: downloaded header-8398
+[00961s]   ok: compiled header-4446
+[00994s]   ok: cache miss layer-4663
+[01013s]   info: compiled header-1315
+[01032s]   warn: cache hit layer-1143
+[01058s]   info: compiled layer-2830
+[01069s]   ok: skipped header-9931
+[01069s] step 6/10: Compiling kernels (this is the slow part)
+[01092s]   info: compiled artifact-6416
+[01095s]   ok: retrying layer-5616
+[01134s]   warn: cache miss layer-4291
+[01164s]   ok: downloaded header-4178
+[01184s]   ok: downloaded object-3795
+[01184s] step 7/10: Linking shared objects
+[01216s]   info: cache miss artifact-5856
+[01250s]   warn: cache miss layer-6541
+[01252s]   ok: compiled header-3186
+[01278s]   ok: skipped artifact-2543
+[01303s]   warn: retrying layer-2123
+[01319s]   warn: skipped object-1473
+[01347s]   ok: retrying header-6480
+[01385s]   ok: cache hit header-7816
+[01407s]   ok: cache miss kernel-3788
+[01407s] ERROR: smoke test failed: ImportError: libcudart.so.12
+=== bake #0016 BURNT after 1407s ===

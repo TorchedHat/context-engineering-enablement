@@ -1,0 +1,42 @@
+=== bake #0003 flash-attn oven=gaudi python=3.11 ===
+[00000s] step 1/10: Resolving build dependencies
+[00022s]   ok: cache miss layer-4925
+[00040s]   info: skipped artifact-779
+[00067s]   ok: downloaded kernel-6862
+[00090s]   ok: compiled object-3330
+[00094s]   info: compiled kernel-4066
+[00096s]   ok: cache hit layer-962
+[00096s] step 2/10: Fetching source tarball
+[00112s]   info: retrying header-7966
+[00115s]   ok: retrying layer-9617
+[00153s]   ok: cache miss header-9702
+[00193s]   ok: skipped kernel-3518
+[00227s]   ok: skipped object-5586
+[00227s] step 3/10: Verifying checksum
+[00259s]   warn: cache hit object-5879
+[00291s]   ok: compiled object-7519
+[00329s]   ok: skipped kernel-2264
+[00369s]   ok: skipped layer-2663
+[00379s]   ok: cache hit object-6347
+[00406s]   ok: cache miss layer-1868
+[00440s]   ok: cache hit kernel-5846
+[00440s] step 4/10: Applying accelerator patches
+[00453s]   ok: downloaded object-4314
+[00485s]   warn: cache miss artifact-5813
+[00493s]   warn: cache miss kernel-9047
+[00496s]   ok: compiled header-9213
+[00525s]   info: retrying object-9018
+[00540s]   ok: downloaded layer-4618
+[00559s]   ok: compiled kernel-9816
+[00574s]   ok: cache hit header-7823
+[00611s]   warn: cache hit kernel-6297
+[00623s]   ok: skipped object-9142
+[00623s] step 5/10: Configuring CMake
+[00660s]   ok: compiled artifact-7819
+[00677s]   ok: cache miss layer-5649
+[00700s]   ok: retrying artifact-3577
+[00740s]   warn: cache hit header-8529
+[00767s]   warn: retrying artifact-3036
+[00774s]   ok: retrying kernel-3145
+[00774s] ERROR: auditwheel: wheel is not manylinux_2_28 compatible
+=== bake #0003 BURNT after 774s ===

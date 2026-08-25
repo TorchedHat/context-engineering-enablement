@@ -1,0 +1,82 @@
+=== bake #0017 triton oven=gaudi python=3.9 ===
+[00000s] step 1/10: Resolving build dependencies
+[00001s]   warn: downloaded kernel-1403
+[00034s]   ok: compiled layer-418
+[00070s]   ok: skipped kernel-3248
+[00107s]   ok: cache hit object-4109
+[00112s]   ok: compiled header-6947
+[00127s]   ok: downloaded layer-5300
+[00156s]   ok: cache miss object-6158
+[00181s]   info: compiled object-1492
+[00182s]   info: skipped layer-2293
+[00188s]   ok: compiled layer-6297
+[00203s]   ok: cache hit layer-5000
+[00203s] step 2/10: Fetching source tarball
+[00234s]   ok: cache hit artifact-5271
+[00273s]   warn: downloaded header-834
+[00296s]   ok: compiled artifact-3357
+[00302s]   info: retrying layer-3542
+[00322s]   ok: compiled header-2991
+[00340s]   ok: retrying artifact-2306
+[00367s]   ok: downloaded layer-6779
+[00373s]   ok: downloaded header-3641
+[00373s] step 3/10: Verifying checksum
+[00384s]   info: downloaded header-8811
+[00410s]   ok: compiled object-2351
+[00425s]   warn: compiled artifact-4946
+[00459s]   ok: downloaded kernel-8476
+[00480s]   warn: retrying object-7320
+[00487s]   info: downloaded object-5883
+[00507s]   ok: compiled kernel-3890
+[00546s]   ok: skipped object-9997
+[00581s]   ok: downloaded kernel-4239
+[00581s] step 4/10: Applying accelerator patches
+[00620s]   ok: retrying kernel-254
+[00640s]   info: cache hit kernel-1206
+[00655s]   ok: cache miss kernel-5415
+[00657s]   ok: retrying artifact-7482
+[00680s]   info: compiled layer-2857
+[00680s] step 5/10: Configuring CMake
+[00702s]   ok: cache hit kernel-3618
+[00722s]   ok: cache hit kernel-1344
+[00728s]   ok: cache miss header-9702
+[00737s]   warn: cache miss artifact-9432
+[00747s]   ok: cache hit artifact-8428
+[00767s]   info: skipped artifact-7817
+[00803s]   ok: retrying kernel-3243
+[00820s]   ok: skipped header-4622
+[00847s]   ok: cache hit header-7175
+[00873s]   ok: cache miss layer-3793
+[00882s]   ok: cache hit header-6594
+[00887s]   warn: compiled object-5425
+[00887s] step 6/10: Compiling kernels (this is the slow part)
+[00910s]   info: cache miss layer-9890
+[00911s]   warn: retrying kernel-8701
+[00951s]   info: retrying layer-1552
+[00953s]   ok: cache miss artifact-2453
+[00973s]   ok: cache hit layer-9939
+[00986s]   ok: downloaded layer-6690
+[00989s]   ok: retrying header-3139
+[01023s]   info: retrying header-3902
+[01031s]   ok: compiled object-5997
+[01041s]   ok: cache hit object-9583
+[01041s] step 7/10: Linking shared objects
+[01068s]   warn: cache hit kernel-7858
+[01087s]   ok: compiled artifact-2263
+[01103s]   ok: skipped layer-8018
+[01115s]   ok: downloaded header-1865
+[01135s]   ok: cache miss object-7019
+[01165s]   ok: downloaded kernel-3100
+[01193s]   ok: retrying layer-6139
+[01203s]   ok: cache hit object-352
+[01240s]   info: cache hit layer-9190
+[01245s]   warn: skipped artifact-8213
+[01278s]   warn: cache miss header-9307
+[01308s]   warn: compiled header-2305
+[01308s] step 8/10: Running smoke tests
+[01318s]   ok: cache miss artifact-3543
+[01356s]   info: compiled kernel-9404
+[01378s]   info: compiled object-2838
+[01399s]   info: cache miss header-2434
+[01399s] ERROR: error: Gaudi SynapseAI headers not found
+=== bake #0017 BURNT after 1399s ===

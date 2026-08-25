@@ -1,0 +1,3 @@
+- **A — kitchen sink session.** Lever: a new session per task. (Bonus: `/btw` for side questions in Claude Code.)
+- **B — correcting in circles.** Lever: a new session and a better first prompt that includes what you learned ("raise ValueError for unknown ovens, including spyre; add a test").
+- **C — infinite exploration.** Lever: scope it ("look at the last 5 rocm logs") or delegate to a subagent that reports back a summary.

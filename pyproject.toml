@@ -1,0 +1,6 @@
+[project]
+name = "wheel-bakery"
+version = "0.1.0"
+description = "Toy AIPCC-style wheel bakery used for the context engineering enablement lab"
+requires-python = ">=3.9"
+

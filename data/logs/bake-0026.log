@@ -1,0 +1,49 @@
+=== bake #0026 triton oven=spyre python=3.11 ===
+[00000s] step 1/10: Resolving build dependencies
+[00038s]   ok: cache miss header-557
+[00054s]   ok: downloaded layer-6424
+[00076s]   ok: skipped object-9197
+[00077s]   warn: compiled layer-9293
+[00088s]   ok: downloaded layer-825
+[00118s]   ok: cache miss header-3293
+[00134s]   warn: compiled header-2775
+[00163s]   warn: compiled object-973
+[00163s] step 2/10: Fetching source tarball
+[00177s]   ok: cache miss object-8870
+[00196s]   ok: compiled object-6929
+[00226s]   info: cache miss kernel-8623
+[00240s]   ok: downloaded object-1545
+[00241s]   ok: downloaded kernel-9547
+[00271s]   ok: retrying artifact-5040
+[00287s]   ok: compiled layer-3111
+[00316s]   ok: cache hit layer-888
+[00340s]   ok: compiled object-9537
+[00346s]   ok: downloaded header-5721
+[00372s]   warn: cache miss object-3552
+[00386s]   ok: retrying artifact-3827
+[00386s] step 3/10: Verifying checksum
+[00408s]   ok: cache hit layer-8991
+[00444s]   warn: skipped object-3551
+[00476s]   info: downloaded layer-6230
+[00506s]   ok: cache hit kernel-6586
+[00528s]   info: cache hit kernel-4236
+[00563s]   ok: skipped header-6444
+[00575s]   info: downloaded kernel-149
+[00581s]   ok: cache hit header-8723
+[00612s]   ok: retrying header-719
+[00636s]   info: retrying kernel-6809
+[00641s]   ok: compiled artifact-1823
+[00641s] step 4/10: Applying accelerator patches
+[00656s]   ok: retrying artifact-5991
+[00659s]   ok: skipped layer-9533
+[00691s]   ok: compiled header-5441
+[00727s]   warn: compiled header-6912
+[00754s]   info: compiled object-675
+[00754s] step 5/10: Configuring CMake
+[00783s]   info: cache miss kernel-812
+[00802s]   ok: compiled header-7005
+[00832s]   warn: cache hit kernel-7040
+[00834s]   info: retrying layer-2674
+[00867s]   ok: retrying kernel-6236
+[00867s] ERROR: OOM: kernel compilation exceeded 64GB
+=== bake #0026 BURNT after 867s ===

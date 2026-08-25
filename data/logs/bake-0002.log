@@ -1,0 +1,118 @@
+=== bake #0002 vllm oven=cpu python=3.12 ===
+[00000s] step 1/10: Resolving build dependencies
+[00036s]   warn: compiled layer-748
+[00042s]   ok: cache miss header-6014
+[00054s]   ok: cache miss header-5947
+[00061s]   warn: cache hit header-7118
+[00063s]   info: compiled layer-7023
+[00082s]   ok: compiled kernel-3206
+[00111s]   ok: compiled kernel-6973
+[00123s]   ok: retrying artifact-1317
+[00145s]   warn: cache miss artifact-4417
+[00174s]   ok: cache hit object-1881
+[00182s]   info: downloaded artifact-7992
+[00193s]   ok: compiled header-1620
+[00215s]   ok: downloaded object-5012
+[00215s] step 2/10: Fetching source tarball
+[00236s]   ok: cache hit header-4516
+[00262s]   info: compiled artifact-2654
+[00275s]   info: cache miss object-756
+[00306s]   ok: compiled kernel-3050
+[00340s]   ok: compiled header-3486
+[00369s]   ok: cache miss kernel-9347
+[00378s]   ok: compiled header-5037
+[00391s]   ok: retrying artifact-3276
+[00399s]   info: retrying layer-2921
+[00418s]   ok: retrying kernel-8252
+[00429s]   ok: compiled layer-5276
+[00450s]   info: downloaded layer-9226
+[00489s]   ok: skipped header-3787
+[00518s]   ok: cache hit layer-484
+[00518s] step 3/10: Verifying checksum
+[00556s]   info: compiled artifact-2415
+[00594s]   info: downloaded object-3447
+[00617s]   info: compiled header-1967
+[00644s]   ok: skipped header-4662
+[00660s]   ok: compiled kernel-1085
+[00682s]   ok: downloaded header-6301
+[00686s]   warn: compiled layer-2608
+[00722s]   ok: downloaded kernel-9961
+[00745s]   warn: downloaded layer-2899
+[00783s]   ok: cache hit object-9824
+[00808s]   warn: retrying artifact-2692
+[00839s]   ok: retrying artifact-2941
+[00857s]   ok: downloaded header-8045
+[00896s]   info: retrying object-4039
+[00896s] step 4/10: Applying accelerator patches
+[00906s]   ok: cache hit kernel-2959
+[00927s]   ok: cache hit header-5989
+[00956s]   ok: compiled layer-1022
+[00966s]   warn: retrying artifact-731
+[00966s] step 5/10: Configuring CMake
+[00974s]   ok: compiled header-1499
+[01009s]   info: downloaded kernel-2745
+[01041s]   info: compiled layer-7782
+[01065s]   warn: compiled object-2188
+[01080s]   ok: retrying artifact-577
+[01092s]   ok: cache miss layer-1610
+[01092s] step 6/10: Compiling kernels (this is the slow part)
+[01109s]   warn: skipped layer-2316
+[01126s]   warn: cache hit kernel-9137
+[01153s]   ok: downloaded kernel-1562
+[01170s]   warn: retrying header-7631
+[01183s]   warn: cache miss object-8160
+[01202s]   warn: skipped kernel-5660
+[01227s]   ok: cache hit header-1819
+[01239s]   info: retrying layer-3453
+[01257s]   ok: skipped header-2238
+[01283s]   info: compiled object-2253
+[01306s]   ok: downloaded artifact-7767
+[01333s]   warn: downloaded kernel-6411
+[01358s]   ok: cache hit header-9099
+[01358s] step 7/10: Linking shared objects
+[01366s]   ok: retrying kernel-1663
+[01388s]   info: compiled header-6803
+[01408s]   info: cache hit layer-930
+[01432s]   ok: cache hit object-5165
+[01450s]   ok: cache hit object-6127
+[01473s]   info: retrying header-8436
+[01485s]   info: cache hit kernel-1799
+[01520s]   warn: compiled kernel-2755
+[01554s]   ok: cache hit header-706
+[01569s]   warn: cache hit artifact-2849
+[01582s]   warn: compiled header-4388
+[01582s] step 8/10: Running smoke tests
+[01621s]   ok: compiled kernel-4242
+[01654s]   ok: skipped object-7235
+[01678s]   info: cache miss header-3447
+[01682s]   ok: compiled kernel-9450
+[01710s]   ok: cache miss object-627
+[01743s]   info: skipped header-211
+[01744s]   ok: skipped kernel-5084
+[01758s]   ok: compiled object-5521
+[01787s]   ok: retrying kernel-86
+[01811s]   info: cache miss layer-2705
+[01811s] step 9/10: Auditing wheel with auditwheel
+[01842s]   warn: downloaded kernel-3635
+[01871s]   ok: cache hit kernel-5226
+[01892s]   ok: cache miss kernel-8986
+[01904s]   ok: cache miss header-765
+[01925s]   ok: cache miss header-9608
+[01938s]   info: cache miss header-4856
+[01963s]   ok: retrying header-1404
+[01993s]   ok: skipped layer-2971
+[02016s]   ok: cache miss artifact-9966
+[02026s]   ok: downloaded kernel-8331
+[02060s]   warn: downloaded object-1472
+[02097s]   ok: compiled object-2721
+[02132s]   info: retrying layer-7420
+[02132s] step 10/10: Uploading to wheelhouse
+[02157s]   ok: compiled kernel-9833
+[02184s]   ok: downloaded object-1552
+[02219s]   info: skipped layer-4417
+[02248s]   ok: cache miss layer-9802
+[02272s]   ok: cache hit layer-7582
+[02300s]   warn: downloaded layer-1467
+[02301s]   ok: cache miss layer-3020
+[02326s]   ok: cache hit header-2872
+=== bake #0002 GOLDEN after 2326s ===

@@ -1,0 +1,65 @@
+=== bake #0006 bitsandbytes oven=spyre python=3.10 ===
+[00000s] step 1/10: Resolving build dependencies
+[00040s]   ok: compiled kernel-4137
+[00043s]   info: cache miss artifact-8330
+[00062s]   ok: downloaded kernel-3237
+[00067s]   info: cache miss object-4050
+[00088s]   ok: compiled artifact-7786
+[00121s]   ok: cache hit header-1673
+[00129s]   info: compiled header-2872
+[00130s]   ok: compiled header-4700
+[00131s]   info: cache miss layer-3142
+[00155s]   ok: retrying kernel-9451
+[00175s]   ok: downloaded artifact-4425
+[00212s]   ok: cache miss kernel-5113
+[00233s]   ok: compiled kernel-4504
+[00233s] step 2/10: Fetching source tarball
+[00263s]   ok: cache miss header-6167
+[00300s]   info: cache miss header-3908
+[00331s]   ok: retrying header-6877
+[00346s]   warn: downloaded layer-4461
+[00355s]   warn: cache miss kernel-7632
+[00390s]   warn: compiled object-9266
+[00390s] step 3/10: Verifying checksum
+[00423s]   info: compiled header-8027
+[00435s]   warn: compiled artifact-3575
+[00471s]   ok: compiled kernel-9339
+[00484s]   info: cache hit layer-6299
+[00491s]   warn: downloaded artifact-392
+[00517s]   ok: compiled kernel-4788
+[00552s]   ok: downloaded artifact-4788
+[00570s]   info: skipped kernel-5130
+[00570s] step 4/10: Applying accelerator patches
+[00581s]   ok: compiled object-13
+[00596s]   warn: retrying header-588
+[00611s]   ok: downloaded object-3664
+[00625s]   info: skipped layer-2826
+[00661s]   info: cache miss header-1783
+[00671s]   warn: cache hit header-8581
+[00694s]   ok: compiled kernel-9972
+[00694s] step 5/10: Configuring CMake
+[00702s]   ok: retrying layer-476
+[00738s]   ok: retrying layer-7569
+[00745s]   ok: retrying layer-8680
+[00758s]   ok: retrying object-8624
+[00774s]   info: cache miss kernel-2824
+[00793s]   warn: compiled object-1432
+[00823s]   ok: cache hit layer-1125
+[00858s]   info: compiled header-3810
+[00892s]   info: cache miss object-6673
+[00918s]   info: retrying header-4889
+[00954s]   warn: downloaded object-961
+[00986s]   ok: cache hit layer-7921
+[00986s] step 6/10: Compiling kernels (this is the slow part)
+[01020s]   warn: cache miss object-2161
+[01057s]   ok: compiled header-8315
+[01076s]   ok: downloaded object-3398
+[01088s]   ok: cache miss header-2188
+[01088s] step 7/10: Linking shared objects
+[01126s]   info: retrying layer-3455
+[01128s]   ok: downloaded object-5790
+[01142s]   ok: retrying artifact-5480
+[01149s]   ok: retrying header-7718
+[01179s]   ok: retrying kernel-1726
+[01179s] ERROR: OOM: kernel compilation exceeded 64GB
+=== bake #0006 BURNT after 1179s ===

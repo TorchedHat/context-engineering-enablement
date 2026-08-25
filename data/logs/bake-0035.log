@@ -1,0 +1,71 @@
+=== bake #0035 flash-attn oven=gaudi python=3.11 ===
+[00000s] step 1/10: Resolving build dependencies
+[00006s]   ok: downloaded header-1410
+[00040s]   ok: cache hit layer-1524
+[00056s]   info: downloaded kernel-2637
+[00077s]   warn: skipped object-3476
+[00112s]   warn: retrying layer-5635
+[00116s]   ok: skipped kernel-3631
+[00152s]   ok: downloaded object-4275
+[00173s]   ok: cache miss kernel-2711
+[00173s] step 2/10: Fetching source tarball
+[00180s]   ok: downloaded object-5533
+[00214s]   ok: downloaded object-4069
+[00253s]   warn: downloaded layer-6493
+[00267s]   warn: cache miss layer-4003
+[00268s]   warn: compiled layer-8235
+[00279s]   ok: downloaded layer-855
+[00319s]   ok: cache hit object-722
+[00339s]   ok: downloaded header-4324
+[00349s]   ok: cache hit object-8999
+[00365s]   ok: cache hit object-9117
+[00399s]   ok: skipped layer-4509
+[00399s] step 3/10: Verifying checksum
+[00405s]   info: skipped object-3077
+[00433s]   info: cache miss kernel-3585
+[00447s]   ok: compiled layer-6169
+[00477s]   ok: retrying layer-8185
+[00487s]   ok: retrying artifact-1096
+[00519s]   info: downloaded artifact-6667
+[00525s]   ok: retrying artifact-5108
+[00541s]   warn: compiled object-3856
+[00554s]   ok: cache miss layer-1695
+[00594s]   ok: retrying artifact-5387
+[00618s]   ok: retrying layer-2815
+[00655s]   warn: cache hit object-9194
+[00663s]   warn: retrying artifact-940
+[00663s] step 4/10: Applying accelerator patches
+[00701s]   warn: cache miss layer-1653
+[00716s]   ok: cache miss object-952
+[00750s]   ok: downloaded object-8206
+[00776s]   ok: compiled kernel-8103
+[00793s]   ok: retrying object-3479
+[00793s] step 5/10: Configuring CMake
+[00820s]   ok: cache miss artifact-5526
+[00845s]   warn: retrying layer-1506
+[00865s]   info: cache miss artifact-5470
+[00866s]   ok: skipped kernel-214
+[00905s]   info: cache miss header-4281
+[00913s]   info: cache miss header-7481
+[00913s] step 6/10: Compiling kernels (this is the slow part)
+[00930s]   ok: retrying layer-4625
+[00937s]   warn: downloaded layer-2828
+[00974s]   ok: cache hit layer-6761
+[01005s]   ok: cache hit artifact-2850
+[01018s]   warn: cache miss artifact-6999
+[01044s]   ok: retrying kernel-3085
+[01064s]   info: cache hit kernel-5902
+[01064s] step 7/10: Linking shared objects
+[01095s]   ok: downloaded object-2402
+[01120s]   warn: retrying header-7488
+[01160s]   ok: cache hit object-6546
+[01169s]   warn: compiled layer-8725
+[01173s]   ok: cache miss object-6914
+[01205s]   ok: cache miss header-7270
+[01244s]   warn: compiled layer-8384
+[01251s]   ok: retrying artifact-3900
+[01263s]   ok: retrying header-9563
+[01296s]   ok: downloaded kernel-1966
+[01329s]   info: compiled kernel-4808
+[01329s] ERROR: error: Gaudi SynapseAI headers not found
+=== bake #0035 BURNT after 1329s ===

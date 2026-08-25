@@ -1,0 +1,41 @@
+=== bake #0039 flash-attn oven=cuda python=3.12 ===
+[00000s] step 1/10: Resolving build dependencies
+[00039s]   info: cache miss object-7316
+[00057s]   warn: downloaded artifact-9473
+[00079s]   ok: cache miss layer-4596
+[00083s]   ok: retrying kernel-3466
+[00109s]   ok: cache hit header-3399
+[00149s]   ok: skipped object-6364
+[00178s]   info: retrying artifact-3707
+[00188s]   ok: skipped header-5176
+[00208s]   warn: cache miss header-3661
+[00237s]   ok: cache miss artifact-962
+[00243s]   ok: cache hit layer-8246
+[00252s]   info: downloaded header-8130
+[00280s]   ok: downloaded object-3666
+[00280s] step 2/10: Fetching source tarball
+[00309s]   warn: skipped layer-7292
+[00310s]   warn: downloaded artifact-3654
+[00325s]   warn: retrying header-2747
+[00363s]   info: retrying layer-8865
+[00372s]   ok: retrying header-9051
+[00404s]   ok: cache hit layer-2646
+[00406s]   ok: skipped object-8604
+[00427s]   ok: downloaded kernel-8380
+[00455s]   warn: cache miss layer-2310
+[00481s]   info: retrying artifact-5527
+[00490s]   ok: skipped artifact-9458
+[00517s]   ok: compiled header-2530
+[00517s] step 3/10: Verifying checksum
+[00533s]   warn: retrying kernel-1474
+[00560s]   ok: downloaded object-8957
+[00572s]   warn: compiled artifact-368
+[00612s]   info: skipped object-6266
+[00644s]   ok: skipped object-9549
+[00680s]   ok: skipped kernel-8553
+[00684s]   warn: cache hit header-9208
+[00686s]   warn: skipped kernel-5626
+[00720s]   warn: skipped header-3770
+[00752s]   ok: skipped kernel-1639
+[00752s] ERROR: OOM: kernel compilation exceeded 64GB
+=== bake #0039 BURNT after 752s ===

@@ -1,0 +1,8 @@
+{
+  "_comment": "Lab settings. Haiku keeps the lab cheap and its 200k window fills fast.",
+  "model": "haiku",
+  "statusLine": {
+    "type": "command",
+    "command": "bash .claude/statusline.sh"
+  }
+}

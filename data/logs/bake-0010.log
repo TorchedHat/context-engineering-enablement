@@ -1,0 +1,91 @@
+=== bake #0010 torch oven=gaudi python=3.11 ===
+[00000s] step 1/10: Resolving build dependencies
+[00023s]   ok: retrying object-2188
+[00044s]   ok: skipped header-831
+[00075s]   warn: cache hit object-9481
+[00090s]   info: compiled artifact-8842
+[00125s]   ok: skipped artifact-8138
+[00125s] step 2/10: Fetching source tarball
+[00141s]   ok: skipped artifact-246
+[00168s]   ok: cache hit object-8686
+[00196s]   ok: cache hit header-1453
+[00210s]   ok: retrying layer-2435
+[00237s]   warn: compiled artifact-1815
+[00241s]   warn: skipped layer-5870
+[00271s]   info: cache miss header-3891
+[00294s]   ok: skipped object-319
+[00313s]   ok: compiled header-4294
+[00343s]   ok: compiled object-1705
+[00353s]   ok: skipped layer-9620
+[00353s] step 3/10: Verifying checksum
+[00387s]   ok: cache hit object-2678
+[00391s]   warn: retrying layer-6684
+[00400s]   ok: skipped artifact-9704
+[00408s]   warn: compiled object-8341
+[00445s]   warn: cache hit layer-2997
+[00467s]   info: compiled kernel-6800
+[00497s]   ok: retrying artifact-1708
+[00511s]   warn: cache hit artifact-6463
+[00537s]   ok: compiled kernel-9101
+[00574s]   ok: cache miss object-9923
+[00576s]   ok: retrying artifact-9881
+[00616s]   ok: cache miss artifact-4364
+[00618s]   info: cache miss header-5650
+[00636s]   info: cache hit layer-4677
+[00636s] step 4/10: Applying accelerator patches
+[00663s]   ok: downloaded layer-3991
+[00683s]   warn: cache hit kernel-5567
+[00695s]   ok: cache hit object-8891
+[00725s]   ok: downloaded artifact-614
+[00760s]   warn: downloaded object-9447
+[00776s]   ok: downloaded header-9887
+[00776s] step 5/10: Configuring CMake
+[00797s]   ok: retrying header-2669
+[00816s]   ok: skipped layer-1803
+[00835s]   ok: cache hit object-3395
+[00875s]   ok: skipped kernel-2713
+[00902s]   info: downloaded object-6015
+[00909s]   ok: compiled object-969
+[00923s]   info: cache miss header-9134
+[00957s]   ok: downloaded kernel-4311
+[00962s]   ok: cache hit object-9846
+[00962s] step 6/10: Compiling kernels (this is the slow part)
+[00988s]   warn: compiled header-7724
+[00992s]   ok: downloaded kernel-3753
+[01017s]   ok: cache miss object-8477
+[01033s]   ok: downloaded layer-3353
+[01038s]   info: downloaded header-5776
+[01074s]   info: retrying kernel-3073
+[01101s]   info: cache hit artifact-4030
+[01138s]   ok: retrying kernel-4788
+[01178s]   ok: compiled kernel-8996
+[01179s]   ok: retrying object-7080
+[01188s]   warn: compiled artifact-4447
+[01222s]   ok: skipped object-8049
+[01247s]   ok: downloaded layer-437
+[01249s]   warn: cache miss artifact-9363
+[01249s] step 7/10: Linking shared objects
+[01262s]   info: cache miss artifact-6374
+[01277s]   info: skipped kernel-9581
+[01299s]   ok: skipped artifact-4703
+[01338s]   ok: downloaded object-3596
+[01354s]   ok: cache miss header-5911
+[01392s]   warn: downloaded kernel-6646
+[01399s]   ok: skipped kernel-2844
+[01439s]   ok: downloaded object-1779
+[01447s]   warn: cache miss header-4045
+[01471s]   info: downloaded artifact-7880
+[01491s]   ok: skipped header-155
+[01494s]   warn: cache miss artifact-368
+[01497s]   ok: cache hit artifact-8468
+[01497s] step 8/10: Running smoke tests
+[01530s]   info: cache hit header-5506
+[01552s]   info: compiled header-8007
+[01562s]   info: compiled header-3504
+[01564s]   info: compiled layer-5922
+[01568s]   info: cache miss kernel-9636
+[01571s]   ok: retrying layer-5394
+[01606s]   info: downloaded kernel-8000
+[01639s]   ok: downloaded artifact-7951
+[01639s] ERROR: auditwheel: wheel is not manylinux_2_28 compatible
+=== bake #0010 BURNT after 1639s ===
