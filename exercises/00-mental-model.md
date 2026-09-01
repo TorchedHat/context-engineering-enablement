@@ -1,44 +1,62 @@
 # 00 · The mental model
 
-Read this once. Every exercise points back to it.
+**Concept:** the agent has no memory. Every time you hit Enter, Claude Code
+builds one request from scratch and sends the whole thing to the model.
 
-**The agent has no memory. Every turn, the harness builds a request from
-scratch and sends the whole thing to the model.**
+## The request
 
 ```
-request (rebuilt every turn) =
-    system prompt              harness, fixed
-  + tool definitions           config: MCP servers, plugins
-  + CLAUDE.md + memory files   config: loaded from disk at session start
-  + conversation history       grows: every message, file read, command output
-                                 → model → reply is appended to history
+request =  FIXED PART                     +  THE CONVERSATION
+           system prompt                     your messages
+           tool definitions                  its replies
+           CLAUDE.md, memory, skills         every file it read
+           loaded once, when you start       every command's output
+           same size every message           grows every message
 ```
 
-Everything in this lab is an operation on that structure:
+There's no database behind the agent. When it "remembers" the port number
+you looked at ten minutes ago, it's because the message where it read that
+port is still in the request. When it forgets, that message is gone.
 
-| You do | What happens to the request |
-|---|---|
-| read a file, run a command | output is appended to **history** |
-| `/context` | prints the size of each block |
-| `/compact` | `history = [ summarize(history) ]` — a model call, and lossy |
-| `/compact <text>` | `summarize(history, instructions=text)` — **this call only** |
-| `/autocompact 100k` | sets the size of history at which `summarize()` runs on its own |
-| a rule in `CLAUDE.md` | sits in the **config** block, so it is in every request, including the one that runs `summarize()` — **every compaction, automatic ones too** |
-| write a file | nothing, until something reads it |
-| use a subagent | a separate request with its own history; only its final reply is appended to yours |
+## Three claims
 
-Six things that follow from this. Watch for each one during the lab:
+The next two exercises show each of these on screen.
 
-1. **Config is paid every turn.** A 400-line CLAUDE.md costs 400 lines on every message.
-2. **Compaction fires on its own.** When history reaches the line, `summarize()` runs mid-task. It does not ask.
-3. **"Forget that" does nothing.** History is append-only until compaction.
-4. **The compaction summary is just a message.** After `/compact`, it is the first thing in history. You can read it.
-5. **Files are not in the request until read.** That is why they are never summarized, and why an agent will re-read disk after compaction loses something.
-6. **A subagent's reading never enters your history.** Only its answer does.
+1. **The conversation only grows.** Chat, files, and command output all go in,
+   and nothing you say takes anything back out. "Forget that" just adds one
+   more message. *(01)*
+2. **Everything costs its size.** A 100-line log costs 100 lines, even when the
+   answer was on line 98. What you let in is your first lever. *(01)*
+3. **When it's full, the conversation gets rewritten.** The model writes a
+   summary of everything so far, and the summary takes its place. You don't get
+   to choose what the summary keeps, and it fires on its own, mid-task. *(02)*
 
-| | Claude Code | Codex |
-|---|---|---|
-| See usage | `/context` (per block) | `/status` (total only) |
-| Compaction line | `/autocompact 100k` | `model_auto_compact_token_limit` |
-| Compact | `/compact [instructions]` | `/compact` (no argument), summary hidden |
-| Standing rules | `CLAUDE.md` | `AGENTS.md` |
+The rest of the lab is about the levers: what you let in (01), what you tell
+the summarizer (03), and what you keep out of the conversation entirely by
+putting it in a file (04).
+
+## How to read `/context`
+
+```
+  claude-haiku-4-5 · 31k/200k tokens (16%)    ← how full the request is
+
+  System prompt   3.1k   ┐
+  System tools   12.4k   │  FIXED PART. Paid on every message.
+  MCP tools       5.8k   │  Only changes when you change config
+  Memory files    0.6k   │  (CLAUDE.md is in here).
+  Skills          1.2k   ┘
+
+  Messages        0.3k   ← THE CONVERSATION. The only line that moves
+                            while you work. This is the meter.
+
+  Autocompact buffer 33k ← the line. When the request reaches it,
+                            exercise 02 happens on its own.
+```
+
+Your numbers will be different. The shape won't be. The status bar at the
+bottom of the screen shows the same total as a percentage, so you can watch it
+climb without running `/context` every time.
+
+> **Codex:** same model, different names. `/status` instead of `/context`,
+> `AGENTS.md` instead of `CLAUDE.md`. Compaction runs server-side and you never
+> see the summary, which is exactly why exercise 04 matters there.
