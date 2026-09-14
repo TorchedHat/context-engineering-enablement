@@ -1,0 +1,6 @@
+[project]
+name = "wheel-bakery"
+version = "0.1.0"
+description = "Small toy project used for the context engineering enablement exercises"
+requires-python = ">=3.9"
+

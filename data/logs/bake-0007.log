@@ -1,0 +1,107 @@
+=== bake #0007 flash-attn oven=cuda python=3.11 ===
+[00000s] step 1/10: Resolving build dependencies
+[00002s]   ok: downloaded object-4215
+[00014s]   info: downloaded artifact-9369
+[00031s]   ok: retrying header-3458
+[00053s]   ok: skipped artifact-760
+[00055s]   ok: cache hit object-1238
+[00070s]   info: cache hit object-9473
+[00105s]   ok: cache miss artifact-5723
+[00105s] step 2/10: Fetching source tarball
+[00116s]   info: cache hit header-9171
+[00124s]   ok: retrying artifact-7085
+[00162s]   ok: retrying kernel-9643
+[00183s]   info: cache hit layer-6706
+[00219s]   ok: retrying object-11
+[00242s]   ok: compiled artifact-7563
+[00264s]   ok: cache miss layer-4480
+[00298s]   ok: cache hit kernel-8993
+[00321s]   ok: skipped object-3778
+[00321s] step 3/10: Verifying checksum
+[00346s]   warn: retrying kernel-2629
+[00359s]   info: skipped object-6548
+[00367s]   ok: cache hit artifact-2909
+[00405s]   ok: cache hit layer-8429
+[00441s]   ok: compiled header-367
+[00471s]   info: cache hit header-8176
+[00471s] step 4/10: Applying accelerator patches
+[00495s]   info: cache miss header-3833
+[00510s]   ok: retrying header-4328
+[00515s]   ok: cache hit layer-1271
+[00519s]   ok: skipped object-7834
+[00552s]   ok: cache miss kernel-879
+[00585s]   warn: compiled layer-9098
+[00605s]   ok: cache miss object-2952
+[00615s]   ok: skipped object-6422
+[00629s]   ok: cache hit kernel-6766
+[00651s]   warn: downloaded header-3138
+[00651s] step 5/10: Configuring CMake
+[00688s]   warn: cache miss object-580
+[00724s]   ok: compiled layer-9316
+[00729s]   info: cache miss layer-5369
+[00764s]   info: cache hit artifact-9946
+[00798s]   warn: cache miss kernel-8927
+[00834s]   warn: retrying object-5756
+[00863s]   ok: skipped layer-9131
+[00875s]   ok: compiled object-4432
+[00889s]   ok: downloaded kernel-2094
+[00908s]   ok: cache hit header-9743
+[00919s]   ok: skipped layer-4679
+[00948s]   info: downloaded artifact-6575
+[00970s]   ok: cache hit kernel-8855
+[00970s] step 6/10: Compiling kernels (this is the slow part)
+[01001s]   ok: cache hit object-8769
+[01007s]   ok: cache hit kernel-3205
+[01012s]   ok: compiled header-7848
+[01050s]   ok: compiled object-8070
+[01086s]   ok: retrying layer-1318
+[01095s]   ok: compiled artifact-4336
+[01118s]   info: cache miss object-476
+[01118s] step 7/10: Linking shared objects
+[01139s]   ok: cache hit header-4937
+[01158s]   ok: cache miss object-7197
+[01164s]   info: cache hit header-9246
+[01183s]   info: cache hit artifact-666
+[01187s]   info: cache miss header-969
+[01196s]   info: retrying header-7302
+[01209s]   warn: cache miss kernel-3535
+[01224s]   warn: cache miss header-7181
+[01258s]   warn: cache hit header-3025
+[01298s]   ok: skipped kernel-8672
+[01304s]   ok: cache hit kernel-4993
+[01304s] step 8/10: Running smoke tests
+[01321s]   warn: cache hit object-4606
+[01324s]   warn: skipped layer-3419
+[01360s]   info: cache hit layer-9442
+[01387s]   ok: cache miss object-4260
+[01395s]   info: cache miss layer-5180
+[01396s]   warn: cache miss kernel-1118
+[01396s] step 9/10: Auditing wheel with auditwheel
+[01424s]   ok: cache hit layer-9673
+[01464s]   info: cache miss header-3685
+[01502s]   warn: skipped kernel-8571
+[01516s]   ok: cache hit layer-4583
+[01545s]   info: cache hit object-1181
+[01567s]   info: cache miss layer-7234
+[01594s]   warn: cache hit kernel-4929
+[01604s]   warn: compiled object-1603
+[01611s]   ok: downloaded header-653
+[01627s]   ok: cache miss kernel-729
+[01638s]   ok: retrying object-209
+[01645s]   ok: retrying object-4483
+[01645s] step 10/10: Uploading to wheelhouse
+[01660s]   warn: skipped artifact-3204
+[01685s]   warn: cache miss object-5654
+[01692s]   info: downloaded header-4730
+[01708s]   info: compiled artifact-8852
+[01728s]   warn: cache hit artifact-9798
+[01761s]   ok: cache hit object-5952
+[01788s]   info: cache miss header-4895
+[01815s]   ok: downloaded layer-9688
+[01830s]   ok: retrying artifact-6490
+[01868s]   ok: downloaded kernel-4345
+[01871s]   ok: compiled header-9709
+[01896s]   ok: cache hit layer-7923
+[01912s]   ok: cache miss header-7346
+[01942s]   ok: retrying object-6442
+=== bake #0007 GOLDEN after 1942s ===
