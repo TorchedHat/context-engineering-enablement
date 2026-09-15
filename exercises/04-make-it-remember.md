@@ -28,14 +28,15 @@ things got written:
 Both are plain text. That folder is where every remembered thing lives for this
 repo. It looks like:
 ```
-~/.claude/projects/-home-you-context-engineering-enablement/memory/MEMORY.md
+~/.claude/projects/<repo-path-with-dashes>/memory/MEMORY.md
 ```
-The long folder name is the repo's full path with the slashes turned into
-dashes. Memory is keyed by that path, so a second clone of the same repo in a
-different folder starts with no memory. If `CLAUDE_CONFIG_DIR` is set, the
-folder is under that directory instead of `~/.claude`. Nothing in it lives in
-the repo, so none of it is committed or shared; that is the difference from
-`CLAUDE.md` in exercise 03.
+The long folder name is the repo's full path with every slash turned into a
+dash, so a repo at `/home/sam/context-engineering-enablement` gets
+`-home-sam-context-engineering-enablement`. Memory is keyed by that path, so a
+second clone of the same repo in a different folder starts with no memory. If
+`CLAUDE_CONFIG_DIR` is set, the folder is under that directory instead of
+`~/.claude`. Nothing in it lives in the repo, so none of it is committed or
+shared; that is the difference from `CLAUDE.md` in exercise 03.
 
 You don't have to create any of this. The agent makes the folder and both
 files the first time you ask it to remember something. You can also make them
