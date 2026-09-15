@@ -14,7 +14,8 @@ ends.
 
 ### 2. Set your format
 Use this one or make your own. Ideas: no emoji ever, answer in Spanish, one
-sentence max, always end with a bad pun, always start with a tl;dr.
+sentence max, always end with a bad pun, always start with a tl;dr. In a
+group, each member proposes one and the group picks.
 ```
 From now on, when you answer me: give the one-line answer first, then at most three bullets, and end with one question back to me. Remember this for every session.
 ```
@@ -44,6 +45,10 @@ You didn't need to ask the agent to change anything. It's a file.
 ```
 Look at `Memory files`. Every rule you keep is sent on every message. Short
 rules are cheap; a page of them is a tax on everything you do.
+
+### Talk about it
+Read the `Memory files` number off `/context`. Does the rule you set earn that
+on every turn? What is one rule you'd actually keep for a month?
 
 > **Codex:** put the rule in `AGENTS.md` under `## Answer style`, restart,
 > and ask the same question twice.

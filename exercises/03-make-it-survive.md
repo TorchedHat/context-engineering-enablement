@@ -7,9 +7,18 @@ A file isn't in the request until something reads it, so it can't be
 summarized away. Works in every tool, including the ones that never show you
 a summary.
 
-Continue from exercise 02 in the same session.
+Start a fresh session in this repo: `claude`.
 
 ### 1. Write it down
+First put something in the conversation worth saving. Say one thing, then
+have it generate a list nobody could guess:
+```
+My favorite color is red. No action needed.
+```
+```
+Generate 30 random 6-digit codes, numbered 1 to 30, one per line, in your reply. No files.
+```
+Keep the codes on screen. Now write them down:
 ```
 Write all 30 codes from context to NOTES.md, numbered, one per line.
 ```
@@ -42,3 +51,7 @@ in it.
 
 None of these see what compaction dropped. Write it down before the line, not
 after.
+
+### Talk about it
+In a repo you actually work in, what would go in `NOTES.md` and what would go
+in `CLAUDE.md`? Pick one real thing for each.

@@ -5,6 +5,9 @@ request grows, what compaction keeps, and where to put what has to last. Each
 step is something to paste, with the expected result under it. Do them in
 order; each one uses what the last one left behind.
 
+**Working in a group:** one person from the team runs it and shares their
+screen. The session, and the memory it writes, live on that machine.
+
 | Exercise | What you'll see |
 |---|---|
 | [00 · The mental model](00-mental-model.md) | what the agent actually gets when you hit Enter, and the four ways that goes wrong |

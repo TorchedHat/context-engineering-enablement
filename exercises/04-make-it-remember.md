@@ -6,8 +6,13 @@ magic, and everything in it is yours to open and edit.
 
 Start a fresh session in this repo: `claude`.
 
+If you have run this exercise before, delete the memory folder first (step 2
+shows where it is). Otherwise step 1 finds what you saved last time and the
+rest plays out differently.
+
 ### 1. Tell it three things about yourself
-Fill in your own. Keep them harmless and easy to check.
+Fill in your own. Keep them harmless and easy to check. In a group, one fact
+per person.
 ```
 Three things to remember about me for every future session: I go by Ade, my go-to snack is pretzels, and I'd rather be surfing. Save them to memory now.
 ```
@@ -65,12 +70,21 @@ What's my go-to snack?
 Usually it still knows. The line in `MEMORY.md` never got updated, and that line
 was loaded at start. The agent "forgot" in one file and remembered in the other.
 
+Sometimes it doesn't know, because this time the agent edited both files. Open
+them anyway. The lesson is the same either way: two files had to agree, and
+nothing checked that they did.
+
 ### 6. Fix it yourself
 Delete the snack from the `MEMORY.md` line in your editor, or delete the whole
 memory folder. Quit, start `claude`, ask again. Now it doesn't know.
 
 That's the takeaway. Asking the agent to remember or forget is a request; the
 files are the truth, and you can always open them.
+
+### Talk about it
+Memory is per person and per clone; nobody else's agent sees it. What is one
+thing you'd want a teammate's agent to know about your work, and where would
+you put it so it did?
 
 > **Codex:** there is no automatic memory. Put the three facts in `AGENTS.md`
 > under a `## About me` heading by hand, restart, and ask the same questions.
