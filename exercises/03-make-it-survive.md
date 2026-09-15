@@ -38,7 +38,7 @@ in it.
 |---|---|---|
 | Every session in this repo | `CLAUDE.md` / `AGENTS.md` | re-sent every turn, keep it short |
 | This task | a file you tell the agent to maintain (`NOTES.md`, `PLAN.md`) | only when read |
-| Facts about you | memory files (exercise 04) | loaded at start, same mechanism |
+| Facts about you | memory files under `~/.claude/projects/…/memory/` (exercise 04), outside the repo, not shared | loaded at start, same mechanism |
 
 None of these see what compaction dropped. Write it down before the line, not
 after.

@@ -30,8 +30,9 @@ what it knows about you. Nobody told it to combine them; both were in the
 fixed part at start.
 
 ### 4. Change it in the file
-Open the memory folder from exercise 04. There's a new note, and it has a
-"Why" and a "How to apply" line the agent wrote on its own. Edit it in your
+Open the memory folder from exercise 04 step 2, the one under
+`~/.claude/projects/`. There's a new note, and it has a "Why" and a "How to
+apply" line the agent wrote on its own. Edit it in your
 editor: change three bullets to one, or swap the question at the end for a
 joke. Quit, start `claude`, ask the question again. It follows your edit.
 

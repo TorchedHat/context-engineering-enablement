@@ -26,7 +26,20 @@ things got written:
 - one line in `MEMORY.md` that points at the note and repeats the facts
 
 Both are plain text. That folder is where every remembered thing lives for this
-repo.
+repo. It looks like:
+```
+~/.claude/projects/-home-you-context-engineering-enablement/memory/MEMORY.md
+```
+The long folder name is the repo's full path with the slashes turned into
+dashes. Memory is keyed by that path, so a second clone of the same repo in a
+different folder starts with no memory. If `CLAUDE_CONFIG_DIR` is set, the
+folder is under that directory instead of `~/.claude`. Nothing in it lives in
+the repo, so none of it is committed or shared; that is the difference from
+`CLAUDE.md` in exercise 03.
+
+You don't have to create any of this. The agent makes the folder and both
+files the first time you ask it to remember something. You can also make them
+by hand, and they load the same way.
 
 ### 3. New session, ask them back
 Quit (`/exit`), then start `claude` again.
